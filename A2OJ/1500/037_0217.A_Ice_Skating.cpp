@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
+    cin.tie(nullptr)->sync_with_stdio(false);
     int n; cin >> n;
     vector<pair<int, int>> arr(n);
     for (auto &[x, y] : arr)
@@ -27,5 +27,5 @@ int main() {
         ++res;
     }
     cout << res - 1 << '\n';
-	return 0;
+    return 0;
 }

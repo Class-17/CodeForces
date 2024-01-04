@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 	cin.tie(nullptr)->sync_with_stdio(false);
-    string s; cin >> s;
+	string s; cin >> s;
 	deque<int> q;
 	int n = size(s);
 	int flag = 0;

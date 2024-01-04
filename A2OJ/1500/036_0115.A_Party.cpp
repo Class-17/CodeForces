@@ -15,9 +15,9 @@ int dfs(int fa, int u) {
 
 int main() {
 	cin.tie(nullptr)->sync_with_stdio(false);
-    int n; cin >> n;
+	int n; cin >> n;
 	vector<int> st(n + 1);
-    for (int i = 1; i <= n; ++i) {
+	for (int i = 1; i <= n; ++i) {
 		int j; cin >> j;
 		if (j == -1) continue;
 		g[j].push_back(i);

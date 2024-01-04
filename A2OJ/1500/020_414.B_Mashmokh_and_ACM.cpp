@@ -4,10 +4,10 @@ using namespace std;
 constexpr int MOD = 1e9 + 7;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
+    cin.tie(nullptr)->sync_with_stdio(false);
     int n, k;
     cin >> n >> k;
-	vector dp(n+1, vector<int>(k+1));
+    vector dp(n+1, vector<int>(k+1));
     for (int i = 1; i <= n; ++i) {
         dp[i][1] = 1;
         for (int l = 2; l <= k; ++l)
@@ -20,5 +20,5 @@ int main() {
     for (int i = 1; i <= n; ++i)
         res = (res + dp[i][k]) % MOD;
     cout << res << '\n';
-	return 0;
+    return 0;
 }

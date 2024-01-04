@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
+    cin.tie(nullptr)->sync_with_stdio(false);
     int n; cin >> n;
     vector<int> arr(n);
     for (auto &x : arr) cin >> x;
@@ -21,5 +21,5 @@ int main() {
             piles.push_back(1);
     }
     cout << size(piles) << '\n';
-	return 0;
+    return 0;
 }

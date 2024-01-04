@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
-	int n; cin >> n;
+    cin.tie(nullptr)->sync_with_stdio(false);
+    int n; cin >> n;
     vector<int> c(n), p(n), ord1(n);
     for (int i = 0; i < n; ++i)
         cin >> c[i] >> p[i];
@@ -18,7 +18,6 @@ int main() {
     sort(begin(ord2), end(ord2), [&](const auto &a, const auto &b) {
         return r[a] > r[b];
     });
-    
     int j = 0;
     vector<int> res(k, - 1);
     for (auto &i : ord1) {
@@ -44,5 +43,5 @@ int main() {
     for (int i = 0; i < k; ++i)
         if (res[i] >= 0)
             cout << res[i] + 1 << ' ' << i + 1 << '\n';
-	return 0;
+    return 0;
 }
