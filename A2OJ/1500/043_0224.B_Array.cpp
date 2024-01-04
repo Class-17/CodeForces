@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
-	int n, k;
+    cin.tie(nullptr)->sync_with_stdio(false);
+    int n, k;
     cin >> n >> k;
     vector<int> arr(n);
     for (auto &x : arr) cin >> x;
@@ -25,5 +25,5 @@ int main() {
             --num;
     }
     cout << l << ' ' << r << '\n';
-	return 0;
+    return 0;
 }

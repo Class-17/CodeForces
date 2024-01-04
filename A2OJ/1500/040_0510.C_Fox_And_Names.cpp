@@ -22,7 +22,7 @@ int floyd(int ord[][26]) {
 }
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
+    cin.tie(nullptr)->sync_with_stdio(false);
     int n; cin >> n;
     vector<string> names(n);
     for (auto &x : names) cin >> x;
@@ -54,5 +54,5 @@ int main() {
         return cnt[a - 'a'] > cnt[b - 'a'];
     });
     cout << res << '\n';
-	return 0;
+    return 0;
 }

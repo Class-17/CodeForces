@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
-	int n, q;
+    cin.tie(nullptr)->sync_with_stdio(false);
+    int n, q;
     cin >> n >> q;
     vector<int> arr(n);
     for (auto &x : arr) cin >> x;
@@ -32,5 +32,5 @@ int main() {
         else
             cout << "No" << '\n';
     }
-	return 0;
+    return 0;
 }

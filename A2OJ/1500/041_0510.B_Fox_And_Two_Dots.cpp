@@ -4,8 +4,8 @@ using namespace std;
 constexpr int dirs[][2] {0, 1, 1, 0, 0, -1, -1, 0};
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
-	int n, m;
+    cin.tie(nullptr)->sync_with_stdio(false);
+    int n, m;
     cin >> n >> m;
     vector<string> grid(n);
     for (auto &x : grid) cin >> x;
@@ -31,5 +31,5 @@ int main() {
             dfs(dfs, i, j);
         }
     cout << "No" << '\n';
-	return 0;
+    return 0;
 }

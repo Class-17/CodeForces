@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
-	string s; cin >> s;
+    cin.tie(nullptr)->sync_with_stdio(false);
+    string s; cin >> s;
     int n = size(s);
     auto dfs = [&](auto &dfs, int num, int idx, int rem) {
         if (rem == 0) {
@@ -20,5 +20,5 @@ int main() {
     for (int i = 1; i <= 4; ++i)
         dfs(dfs, 0, 0, i);       
     cout << "NO" << '\n';
-	return 0;
+    return 0;
 }

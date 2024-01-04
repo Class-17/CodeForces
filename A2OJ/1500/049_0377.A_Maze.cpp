@@ -4,8 +4,8 @@ using namespace std;
 constexpr int dirs[][2] {0, 1, 1, 0, 0, -1, -1, 0};
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
-	int n, m, k;
+    cin.tie(nullptr)->sync_with_stdio(false);
+    int n, m, k;
     cin >> n >> m >> k;
     vector<string> grid(n);
     for (auto &row : grid) cin >> row;
@@ -32,5 +32,5 @@ int main() {
             if (ch == '_') ch = '.';
         cout << row << '\n';
     }  
-	return 0;
+    return 0;
 }

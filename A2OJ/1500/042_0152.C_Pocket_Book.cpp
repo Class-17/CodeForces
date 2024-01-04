@@ -4,7 +4,7 @@ using namespace std;
 constexpr int MOD = 1e9 + 7;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
+    cin.tie(nullptr)->sync_with_stdio(false);
     int n, m;
     cin >> n >> m;
     vector<string> names(n);
@@ -17,5 +17,5 @@ int main() {
         res = res * size(st) % MOD;
     }
     cout << res << '\n';
-	return 0;
+    return 0;
 }

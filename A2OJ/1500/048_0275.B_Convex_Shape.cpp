@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-	cin.tie(nullptr)->sync_with_stdio(false);
-	int n, m;
+    cin.tie(nullptr)->sync_with_stdio(false);
+    int n, m;
     cin >> n >> m;
     vector<string> grid(n);
     for (auto &x : grid) cin >> x;
@@ -36,5 +36,5 @@ int main() {
             }
         }
     cout << "YES" << '\n'; 
-	return 0;
+    return 0;
 }
