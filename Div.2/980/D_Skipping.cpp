@@ -18,14 +18,12 @@ int solve() {
     while (!pq.empty()) {
         auto [d, u] = pq.top(); pq.pop();
         if (dist[u] < d) continue;
-        int v = u;
-        while (v >= 0 and dist[v] >= d) {
+        for (int v = u; v >= 0 and dist[v] >= d; --v) {
             dist[v] = d;
             if (d + a[v] < dist[b[v]]) {
                 dist[b[v]] = d + a[v];
                 pq.emplace(d + a[v], b[v]);
             }
-            v -= 1;
         }
     }
     i64 res = 0, sum = 0;;
